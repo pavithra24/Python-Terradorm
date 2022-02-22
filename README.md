@@ -18,7 +18,7 @@ Three different directories are created called K8s, Python and terrafom
               -----> containerize the python application
               
   |------>**secrets.py**
-              -----> to pass the aws screte and access key
+              -----> to pass the aws secret and access key
               
   |------>**write_s3.py**
               -----> python script that creates a new file on every execution with date and time as a prefix and uploads to s3 bucket on aws 
