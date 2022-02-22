@@ -1,0 +1,12 @@
+#creating qa and staging namespaces
+apiVersion: v1
+kind: List
+items:
+  - apiVersion: v1
+    kind: Namespace
+    metadata:
+      name: qa
+  - apiVersion: v1
+    kind: Namespace
+    metadata:
+      name: staging

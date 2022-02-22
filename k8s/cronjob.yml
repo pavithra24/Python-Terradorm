@@ -1,0 +1,18 @@
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  name: python-s3
+  namespace: qa
+spec:
+  concurrencyPolicy: Forbid
+  schedule: '*/5 * * * *' # cron spec of time, here every 5 min
+  jobTemplate:
+    spec:
+      backoffLimit: 2
+      template:
+        spec:
+          restartPolicy: Never # restartpolicy set to never so that pod run every 5 min once and exits
+          containers:
+            - name: pod
+              image: paavithrav07/pythontest-slim:latest #docker image from docker hub
+
