@@ -3,31 +3,31 @@
 Three different directories are created called K8s, Python and terrafom
 
 
-**k8**
+## k8s/
 
-  |------>**cronjob.yml**
-              -----> to schedule kubernetes pod job to run on every 5 minutes
+  ### cronjob.yml
+              - to schedule kubernetes pod job to run on every 5 minutes
               
-  |------>**namespace.yml**
-              -----> to create 2 different namesapces qa and staging
+  ### namespace.yml
+              - to create 2 different namesapces qa and staging
               
               
-**python**
+## python/
 
-  |------>**Dockerfil**
-              -----> containerize the python application
+  ### Dockerfil
+              - containerize the python application
               
-  |------>**secrets.py**
-              -----> to pass the aws secret and access key
+  ### secrets.py
+              - to pass the aws secret and access key
               
-  |------>**write_s3.py**
-              -----> python script that creates a new file on every execution with date and time as a prefix and uploads to s3 bucket on aws 
+  ### write_s3.py
+              - python script that creates a new file on every execution with date and time as a prefix and uploads to s3 bucket on aws 
               
-**terraform**
+## terraform/
 
-  |------>**eks-cluster**
-              -----> terrafom snippet to create eks cluster with all supporting resources 
+  ## eks-cluster
+              - terrafom snippet to create eks cluster with all supporting resources 
               
-  |------>**s3-resource**
-              -----> terrafom snippet to create s3 resource to upload python executed files
+  ## s3-resource
+              - terrafom snippet to create s3 resource to upload python executed files
             
