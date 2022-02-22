@@ -14,7 +14,7 @@ Three different directories are created called K8s, Python and terrafom
               
 ## python/
 
-  ### Dockerfil
+  ### Dockerfile
               - containerize the python application
               
   ### secrets.py
