@@ -25,7 +25,7 @@ Three different directories are created called K8s, Python and terrafom
               
 **terraform**
 
-  |------>**eks-cluster **
+  |------>**eks-cluster**
               -----> terrafom snippet to create eks cluster with all supporting resources 
               
   |------>**s3-resource**
