@@ -1,4 +1,3 @@
-# ZenJob-Assignment
 
 Three different directories are created called K8s, Python and terrafom
 
